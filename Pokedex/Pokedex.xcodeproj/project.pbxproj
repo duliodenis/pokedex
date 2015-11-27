@@ -12,6 +12,7 @@
 		6C525DDF1C07DCB700C330C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C525DDD1C07DCB700C330C3 /* Main.storyboard */; };
 		6C525DE11C07DCB700C330C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6C525DE01C07DCB700C330C3 /* Assets.xcassets */; };
 		6C525DE41C07DCB700C330C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6C525DE21C07DCB700C330C3 /* LaunchScreen.storyboard */; };
+		6C5D76F21C08C0B500DB3886 /* pokemon.csv in Resources */ = {isa = PBXBuildFile; fileRef = 6C5D76F11C08C0B500DB3886 /* pokemon.csv */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		6C525DE01C07DCB700C330C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6C525DE31C07DCB700C330C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6C525DE51C07DCB700C330C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6C5D76F11C08C0B500DB3886 /* pokemon.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = pokemon.csv; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 				6C525DDB1C07DCB700C330C3 /* ViewController.swift */,
 				6C525DDD1C07DCB700C330C3 /* Main.storyboard */,
 				6C525DE01C07DCB700C330C3 /* Assets.xcassets */,
+				6C5D76F11C08C0B500DB3886 /* pokemon.csv */,
 				6C525DE21C07DCB700C330C3 /* LaunchScreen.storyboard */,
 				6C525DE51C07DCB700C330C3 /* Info.plist */,
 			);
@@ -124,6 +127,7 @@
 			files = (
 				6C525DE41C07DCB700C330C3 /* LaunchScreen.storyboard in Resources */,
 				6C525DE11C07DCB700C330C3 /* Assets.xcassets in Resources */,
+				6C5D76F21C08C0B500DB3886 /* pokemon.csv in Resources */,
 				6C525DDF1C07DCB700C330C3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +290,7 @@
 				6C525DEA1C07DCB700C330C3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
