@@ -7,13 +7,15 @@
 //
 
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     @IBOutlet weak var collection: UICollectionView!
     
     var pokemon = [Pokemon]()
-    
+    var music: AVAudioPlayer!
+
     
     // MARK: View Lifecycle
     
@@ -22,6 +24,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         collection.delegate = self
         collection.dataSource = self
         
+        initAudio()
+        music.play()
         parsePokemonCSV()
     }
 
@@ -43,6 +47,31 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         } catch let error as NSError {
             print(error.debugDescription)
         }
+    }
+    
+    
+    func initAudio() {
+        do {
+            try music = AVAudioPlayer(contentsOfURL: NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("music", ofType: "mp3")!))
+            music.numberOfLoops = -1
+            music.prepareToPlay()
+        } catch let error as NSError {
+            print(error.debugDescription)
+        }
+    }
+    
+    
+    @IBAction func musicToggle(sender: UIButton) {
+        if music.playing {
+            music.stop()
+            sender.alpha = 0.4
+            sender.setImage(UIImage(named: "volume-off"), forState: .Normal)
+        } else {
+            music.play()
+            sender.alpha = 1.0
+            sender.setImage(UIImage(named: "volume-on"), forState: .Normal)
+        }
+        
     }
     
     
