@@ -142,7 +142,7 @@
                     <connections>
                         <outlet property="collection" destination="l1C-a0-eSM" id="coG-Ej-RfC"/>
                         <outlet property="searchBar" destination="bvc-Sj-v7m" id="WWg-hN-x9k"/>
-                        <segue destination="iVm-DR-Tx1" kind="show" identifier="PokemonDetailVC" id="mvR-y1-u0y"/>
+                        <segue destination="iVm-DR-Tx1" kind="show" identifier="PokemonDetailVC" id="erW-VA-KOc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -313,6 +313,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="OoQ-6D-cry" firstAttribute="top" secondItem="c1B-Cl-nB9" secondAttribute="top" id="CQi-GV-9CO"/>
                             <constraint firstItem="OoQ-6D-cry" firstAttribute="leading" secondItem="c1B-Cl-nB9" secondAttribute="leading" id="rYN-GJ-2yN"/>
