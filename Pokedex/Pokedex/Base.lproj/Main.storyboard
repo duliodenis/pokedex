@@ -166,14 +166,14 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="55"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qB3-rj-xqJ">
-                                        <rect key="frame" x="107" y="17" width="387" height="21"/>
+                                        <rect key="frame" x="107" y="16" width="387" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="55b-UL-n0g"/>
                                             <constraint firstAttribute="width" constant="316" id="UWa-Zd-PMy"/>
-                                            <constraint firstAttribute="height" constant="21" id="iRN-pv-tMI"/>
+                                            <constraint firstAttribute="height" constant="24" id="iRN-pv-tMI"/>
                                             <constraint firstAttribute="width" constant="387" id="qy9-Dt-7z4"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="24"/>
+                                        <fontDescription key="fontDescription" name="PokemonSolidNormal" family="Pokemon Solid" pointSize="16"/>
                                         <color key="textColor" red="0.96862745100000003" green="0.78823529410000004" blue="0.14117647059999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="default">
@@ -190,6 +190,9 @@
                                             <constraint firstAttribute="width" constant="48" id="qX6-9I-kYc"/>
                                         </constraints>
                                         <state key="normal" image="back"/>
+                                        <connections>
+                                            <action selector="backAction:" destination="iVm-DR-Tx1" eventType="touchUpInside" id="mVi-se-rbT"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.34509803919999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -381,7 +384,18 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="nameLabel" destination="qB3-rj-xqJ" id="ary-tF-xJp"/>
+                        <outlet property="IDLabel" destination="l9c-iZ-ifT" id="pgW-vQ-c1s"/>
+                        <outlet property="attackLabel" destination="9gC-yF-Nn1" id="ZPo-jT-oLa"/>
+                        <outlet property="currentEvolutionImage" destination="hwb-bw-qfE" id="aSY-WV-JnT"/>
+                        <outlet property="defenseLabel" destination="fFB-zN-8iA" id="IfK-d6-32C"/>
+                        <outlet property="descriptionLabel" destination="qgp-92-eUd" id="V8v-Jm-r5G"/>
+                        <outlet property="evolutionLabel" destination="rb4-y1-q88" id="R5a-C1-kEk"/>
+                        <outlet property="heightLabel" destination="xbW-Tk-Vty" id="bgL-cX-DT7"/>
+                        <outlet property="mainImage" destination="57u-24-d26" id="ccp-hd-Cks"/>
+                        <outlet property="nameLabel" destination="qB3-rj-xqJ" id="315-Bf-wgn"/>
+                        <outlet property="nextEvolutionImage" destination="Tm6-bE-Q3e" id="Lb2-rp-RWF"/>
+                        <outlet property="typeLabel" destination="Av9-E3-yiB" id="OFQ-zv-YDy"/>
+                        <outlet property="weightLabel" destination="Bcc-AH-E0D" id="doh-sa-s9K"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ISk-4x-fQx" userLabel="First Responder" sceneMemberID="firstResponder"/>
